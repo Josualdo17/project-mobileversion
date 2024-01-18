@@ -1,0 +1,108 @@
+*{
+    font-family: 'Inter', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --cordaborda:rgba(255, 255, 255, 0.5);
+    --textcolor:white;
+    --backgroundimage:url("bg-mobile.jpg");
+    --switch:url("sun.svg");
+    --iconcolor:white;
+}
+.light{
+    --cordaborda:rgba(0, 0, 0, 0.5);
+    --textcolor:black;
+    --backgroundimage:url("bg-mobile-light.jpg");
+    --switch:url("sun.svg");
+    --switch:url("moon-stars.svg");
+    --iconcolor:#702DF6;
+    
+}
+body{
+    background-image: var(--backgroundimage);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+div>img{
+    border-radius: 50%;
+    
+}
+.imagem{
+    width: 360px;
+    margin: auto;
+   
+}
+#switch>button{
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    background-image:var(--switch);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border:0
+    
+
+
+}
+div.imagem>img{
+    display: block;
+    width: 180px;
+    margin: auto;
+    padding: 24px;
+    margin-top: 56px;
+}
+p{
+    text-align: center;
+    color: var(--textcolor);
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 4px;
+}
+.container{
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    flex-direction: column;
+    padding-top: 15px;
+  
+    
+   
+}   
+
+ul li a{  
+    display: flex; 
+    text-align: center;
+    color: var(--textcolor);
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    background-color: rgba(255, 255, 255, 0.1) ;
+    border-radius: 8px;
+    border: 2px solid var(--cordaborda);
+    transition: background 0.5s;
+}
+a:hover{
+    background-color:rgba(255, 255, 255, 0.3);
+    border: 1.8px solid var(--cordaborda);
+}
+.socialmedia{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 8px;
+   
+
+}
+div>a>i{
+   color: var(--iconcolor);
+}
